@@ -1,0 +1,38 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Today I will show you all how to make tooltip</h4>
+            <a href="#" data-toggle="tooltip" title="ToolTip Link" data-placement="top">Top Tooltip</a>
+            <a href="#" data-toggle="tooltip" title="ToolTip Link" data-placement="left">Left Tooltip</a>
+            <a href="#" data-toggle="tooltip" title="ToolTip Link" data-placement="right">Right Tooltip</a>
+            <a href="#" data-toggle="tooltip" title="ToolTip Link" data-placement="bottom">Bottom Tooltip</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h4>Now I will show you guyz how to make a popover</h4>
+            <a href="#" data-toggle="popover" title="!Popover Link!" data-content="Hey I am Popover! Do you want to click on me?">
+            The Popover Link</a>
+            <h4>Without clicking the popover</h4>
+            <a href="#" data-toggle="popover" title="!Popover Link!" data-trigger="hover" data-content="Hey I am Popover! Do you want to click on me?">
+                The Popover Link</a>
+        </div>
+    </body>
+</html>

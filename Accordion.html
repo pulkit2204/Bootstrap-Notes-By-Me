@@ -1,0 +1,81 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <div class="col-md-4">
+                <button class="btn btn-warning" data-toggle="collapse" data-target="#coll1">Collapse</button>
+                <div id="coll1" class="collapse">This is a collapsible panel</div><br><br>
+    
+                <a href="#coll2" class="btn btn-danger" data-toggle="collapse" >Collapse 2</a>
+                <div id="coll2" class="collapse">
+                    This is the second collapsible panel
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><a href="#coll3" data-toggle="collapse">Click to open the panel</a> </div>
+                    <div id="coll3" class="panel-collapse collapse">
+                        <div class="panel-body">This is the panel body</div>
+                        <div class="panel-footer">This isthe panel footer</div>
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+               <div class="col-md-6">
+                   <h4> Here I created many panels.</h4>
+                   <div class="panel-group" id="parent_div">
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a href="#a_coll1" data-parent="#parent_div" data-toggle="collapse">The First Panel </a>
+                                </div>
+                                <div id="a_coll1" class="panel-collapse collapse">
+                                    <div class="panel-body">This is the first Panel Body</div>
+                                    <div class="panel-footer">This is the first panel footer</div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a href="#a_coll2" data-parent="#parent_div" data-toggle="collapse">The Second Panel </a>
+                                    </div>
+                                    <div id="a_coll2" class="panel-collapse collapse">
+                                        <div class="panel-body">This is the first Panel Body</div>
+                                        <div class="panel-footer">This is the first panel footer</div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <a href="#a_coll3" data-parent="#parent_div" data-toggle="collapse">The Third Panel </a>
+                                    </div>
+                                    <div id="a_coll3" class="panel-collapse collapse">
+                                        <div class="panel-body">This is the first Panel Body</div>
+                                        <div class="panel-footer">This is the first panel footer</div>
+                                    </div>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                    <a href="#a_coll4" data-parent="#parent_div" data-toggle="collapse">The Fourth Panel </a>
+                                </div>
+                                <div id="a_coll4" class="panel-collapse collapse">
+                                    <div class="panel-body">This is the first Panel Body</div>
+                                    <div class="panel-footer">This is the first panel footer</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </body>
+</html>
